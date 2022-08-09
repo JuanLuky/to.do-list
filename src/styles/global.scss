@@ -1,0 +1,44 @@
+:root {
+  --blue: #4827ad;
+  --red: 	#ad273f;
+  --background: #383838;
+  --shapes: #FFFFFF;
+  --text-title: #e4e4e4;
+  --text: #dcdcdc;
+  --text-light: #A09CB1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px "Poppins", Arial, sans-serif;
+  color: #121214;
+  background-color: #121214;
+}
+
+input, textarea {
+  font-family: "Poppins";
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+button, .checkmark {
+  cursor: pointer;
+}
+@media (max-width: 710px) {
+  section.task-list header{
+    flex-direction: column !important;
+  }
+  section.task-list header h2 {
+    font-size: 2rem !important;
+    margin-bottom: 20px;
+  }
+}
