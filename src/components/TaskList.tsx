@@ -47,13 +47,15 @@ export function TaskList() {
     const filterTask = tasks.filter((task) => task.id !== id);
     setTasks(filterTask);
   }
+    
+  const filterTaskTrue = tasks.filter((task) => task.isComplete === true);
 
   return (
     <section className="task-list container">
       <header>
         <div className="task-list-text">
           <h2>Minhas Tarefas</h2>
-          <p>Tarefas Criadas <span>{tasks.length}</span></p>
+          <p>Tarefas Concluidas  <span>{filterTaskTrue.length} de <span>{tasks.length}</span></span></p>
         </div>
 
         <div className="input-group">
