@@ -13,9 +13,12 @@ section.task-list {
     align-items: center;
     justify-content: space-between;
     
-    h2 {
+    .task-list-text h2 {
       color: var(--text-title);
       font-size: 2.25rem;
+    }
+    .task-list-text p {
+      color: var(--text-title);
     }
 
     .input-group {
