@@ -15,6 +15,7 @@ export function TaskListItem({
   handleToggleTaskCompletion,
   handleRemoveTask,
 }: TaskProps) {
+    
   return (
     <li key={task.id}>
       <div className={task.isComplete ? "completed" : ""} data-testid="task">
